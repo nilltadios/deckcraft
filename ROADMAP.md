@@ -137,7 +137,7 @@ app's JSON control channel (`deckcraft --control PORT`).
 
 | Date | What landed |
 |---|---|
-| 2026-10-26 | Flatpak candidate #1403: both the source and release-bundle manifests use Freedesktop 26.08. Release-bundle builds, file operations and the Rust SDK extension probe pass on native x86_64 and aarch64. Full source rebuilds and ARM GUI acceptance remain unverified; readiness estimates are unchanged. |
+| 2026-10-26 | Flatpak candidate #1403: both the source and release-bundle manifests use Freedesktop 26.08. Source preparation also vendors unused Cargo patches without changing Cargo.lock. Release-bundle builds, file operations and the Rust SDK extension probe pass on native x86_64 and aarch64. Full source rebuilds and ARM GUI acceptance remain unverified; readiness estimates are unchanged. |
 | 2026-10-25 | Windows installer: the Start menu shortcut takes the icon embedded in `deckcraft.exe` instead of an MSI `<Icon>`, so a taskbar pin keeps its icon after an update (#1114); a pin that already lost it has to be unpinned and pinned again once |
 | 2026-10-24 | AutoFormat as you type: a paragraph that starts with `*`, `-`, `--`, `>`, `<>`, `1.`, `1)`, `I.`, `i.`, `A.`, `a.` or `a)` and a space or tab becomes a bulleted or numbered list in that style; Backspace right after puts the typed text back, and Tools ▸ AutoCorrect and `text.autocorrect {lists}` turn it off |
 | 2026-10-24 | Tables: while the caret is in a cell, dragging into another cell selects that range of cells (shaded, merged cells taken in whole), and Shift+arrow grows or shrinks it; formatting applies to the selected cells only, and Delete clears their text and keeps the table |
