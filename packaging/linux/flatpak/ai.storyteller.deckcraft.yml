@@ -12,7 +12,7 @@
 # repackages the Linux tarball); keep runtime-version and finish-args identical in both.
 id: ai.storyteller.deckcraft
 runtime: org.freedesktop.Platform
-runtime-version: '25.08'
+runtime-version: '26.08'
 sdk: org.freedesktop.Sdk
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.rust-stable
